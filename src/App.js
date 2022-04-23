@@ -1,6 +1,10 @@
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
 import Container from '@mui/material/Container';
 import CssBaseline from '@mui/material/CssBaseline';
 import Divider from '@mui/material/Divider';
@@ -11,25 +15,23 @@ import Paper from '@mui/material/Paper';
 import ToolBar from "@mui/material/Toolbar";
 import Typography from '@mui/material/Typography';
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home } from './Home';
+import { Test } from './Test';
+
+
+import { GraphicsNav } from './components/GraphicsNav';
+
 function App() {
   return (
     <>
-      <CssBaseline />
-      <AppBar position="fixed">
-        <ToolBar>
-          <Typography>Graphics</Typography>
-        </ToolBar>
-      </AppBar>
-      <main>
-        <Box sx={{height: "80pt"}}>
-        </Box>
-        <Box>
-          <Container maxWidth="md">
-            <Typography component="h1" variant="h3" align="center" gutterBottom>Title</Typography>
-            <Typography component="h5" variant="body1" gutterBottom>Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely. Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</Typography>
-          </Container>
-        </Box>
-      </main>
+      <GraphicsNav />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/test" element={<Test />} />
+        </Routes>
+      </Router>
     </>
   );
 }
