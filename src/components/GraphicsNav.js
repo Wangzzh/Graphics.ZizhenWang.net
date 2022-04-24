@@ -14,7 +14,7 @@ export function GraphicsNav() {
                     <Typography variant="h5">Graphics Hub</Typography>
                 </ToolBar>
             </AppBar>
-            <Box sx={{mt: "100px"}}></Box>
+            <Box sx={{mt: "130px"}}></Box>
         </>
     )
 }

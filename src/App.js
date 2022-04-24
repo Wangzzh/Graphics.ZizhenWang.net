@@ -19,6 +19,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home } from './Home';
 import { Test } from './Test';
 
+import { ReflectionModelBasics } from './blogs/reflectionModel/ReflectionModelBasics';
 
 import { GraphicsNav } from './components/GraphicsNav';
 
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/test" element={<Test />} />
+          <Route path="/reflectionmodel/basics" element={<ReflectionModelBasics />} />
         </Routes>
       </Router>
     </>
