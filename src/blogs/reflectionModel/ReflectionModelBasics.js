@@ -65,7 +65,7 @@ $$
 $$
 r_\\perp = \\frac{\\eta_i\\cos\\theta_i - \\eta_t\\cos\\theta_t}{\\eta_i\\cos\\theta_i + \\eta_t\\cos\\theta_t}
 $$
-where $r_\\parallel$ is the Fresnel reflectance for parallel polarized light and $r_\perp$ is for perpendicular polarized light. $\\eta_i$ and $\\eta_t$ are indices of refractions and $\\theta_i$ and $\\theta_t$ and incident and refraction angles.
+where $r_\\parallel$ is the Fresnel reflectance for parallel polarized light and $r_\\perp$ is for perpendicular polarized light. $\\eta_i$ and $\\eta_t$ are indices of refractions and $\\theta_i$ and $\\theta_t$ and incident and refraction angles.
 
 For unpolarized light, the total Fresnel reflectance is
 $$

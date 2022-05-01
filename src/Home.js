@@ -19,6 +19,7 @@ import Typography from '@mui/material/Typography';
 
 import { CardTemplate } from './cards/CardTemplate';
 import { ReflectionModelBasicsCard } from './cards/ReflectionModelCards';
+import { ColorSpaceCard } from './cards/ColorSpaceCards';
 
 export function Home() {
     return (
@@ -32,6 +33,9 @@ export function Home() {
                 <Container>
                     <Typography variant="h4" align='center' gutterBottom>Reflection Models</Typography>
                     <Grid container spacing={1}>
+                        <Grid item md={4}>
+                            <ColorSpaceCard></ColorSpaceCard>
+                        </Grid>
                         <Grid item md={4}>
                             <ReflectionModelBasicsCard></ReflectionModelBasicsCard>
                         </Grid>
